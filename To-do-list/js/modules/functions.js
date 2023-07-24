@@ -55,7 +55,6 @@ function addoldtask(task) {
     completedtask.classList.remove("template1");
     completedtask.classList.remove("hide");
     list.appendChild(completedtask);
-    console.log(completedtask);
 
     /* remover lista */
     const remove = completedtask.querySelector('.remove-btn1');

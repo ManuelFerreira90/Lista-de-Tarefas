@@ -7,21 +7,22 @@
 
 /* cabeçalho */
 
-#header-container{
+#header-container{  
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
     gap: 10px;
     padding: 0.5em 2em;
-    border: 1px solid black;
     box-shadow: none;
+    width: auto;
 }
 
 
 #title{
-    margin-top: 0;
     color: var(--gray-1, #333);
     font-family: Space Mono;
-    font-size: 2em;
+    font-size: 1.5em;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -29,10 +30,20 @@
     align-self: center;
 }
 
+#header1{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
 /* body */
 
 body{
-    background-image: linear-gradient(to right, rgb(41, 201, 147), #047771);
+    background-image: linear-gradient(to right, aquamarine, #FFF);
+}
+
+main{
+    margin: auto;
 }
 
 /* estilo das listas */
@@ -64,7 +75,6 @@ body{
     width: 400px;
     height: 50px;
     line-height: 50px;
-    position: relative;
     border: 0.5px solid #FFF;
     border-radius: 10px;
 }
@@ -173,7 +183,6 @@ ion-icon{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    gap: 7em;
     list-style: none;
 }
 
@@ -193,7 +202,7 @@ ion-icon{
     line-height: 50px;
 }
 
-/* excluir tasks */
+/* esconder tasks */
 .hide{
     display: none;
 }
@@ -209,4 +218,48 @@ footer{
     align-items: center;
     margin-top: 50em;
     margin-bottom: 1.5em;
+}
+
+
+@media screen and (max-width: 500px) {
+    .tasks-name{
+        font-size: 0.6rem;
+    }
+
+    #input-tasks{
+        width: 15em;
+    }
+
+    #tasks{
+        margin: 0 auto;
+    }
+
+    .tasks-title{
+        font-size: 1rem;
+    }
+
+    #tasks-container{
+        margin-top: 10px;
+        flex-direction: column;
+        gap: 10px;
+        margin-left: 20px;
+    }
+
+    .tasks-style{
+        width: 350px;
+        height: 50px;
+        line-height: 50px;
+    }
+
+    #title{
+        font-size: 1.2em;
+    }
+
+    #image{
+        display: none;
+    }
+
+    #header-container{
+        justify-content: center;
+    }
 }
