@@ -4,10 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
-    <title>To do</title>
+    <title>To do List</title>
 </head>
 <body>
-    
-    <script src="./js/app.js"></script>
+
+    <header>
+        <div id="header-container">
+            <img id="image" src="./img/Checklist.svg" alt="checklist" width="70px">
+            <h1 id="title">To do list</h1>
+        </div>
+    </header>
+
+    <main>
+        <div id="tasks">
+            <h2 class="tasks-title">Enter your tasks:</h2>
+            <form action="" id="form">
+                <input type="text" id="input-tasks" class="tasks-name" placeholder="Your tasks">
+                <button id="btn" type="submit">
+                    <ion-icon name="add-outline"></ion-icon>
+                </button> 
+            </form>
+        </div>
+        <div id="tasks-container">
+            <div id="to-do">
+                <h2 class="tasks-title">To do</h2>
+                <ul id="to-do-list" class="tasks-list not">
+                    <li class="tasks-style template hide">
+                        <span class="tasks-name">testando</span>
+                        <div class="to-do-btn">
+                                <ion-icon class="btninput s" name="checkmark-outline"></ion-icon>
+                                <ion-icon class="btninput c remove-btn" name="close-outline"></ion-icon>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div id="completed">
+                <h2 class="tasks-title">Completed</h2>
+                <ul id="to-do-list-complet" class="tasks-list yes">
+                    <li class="tasks-style done">
+                        <span class="textdone">testando</span>
+                        <ion-icon class="btninput c remove-btn1" name="close-outline"></ion-icon>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        created by <span class="text name">ManuelFerreira90</span>
+    </footer>
+
+    <script type="module" src="./js/app.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 </body>
 </html>

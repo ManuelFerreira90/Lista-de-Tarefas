@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Montserrat&family=Space+Mono&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* cabeçalho */
+
+#header-container{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 0.5em 2em;
+    border: 1px solid black;
+    box-shadow: none;
+}
+
+
+#title{
+    margin-top: 0;
+    color: var(--gray-1, #333);
+    font-family: Space Mono;
+    font-size: 2em;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.14rem;
+    align-self: center;
+}
+
+/* body */
+
+body{
+    background-image: linear-gradient(to right, rgb(41, 201, 147), #047771);
+}
+
+/* estilo das listas */
+
+.tasks-list{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.tasks-title{
+    margin-top: 0;
+    color: var(--gray-1, #333);
+    font-family: Space Mono;
+    font-size: 2em;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.14rem;
+}
+
+.tasks-style{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 0.5em;
+    padding-right: 0.5em;   
+    background-color: #FFF;
+    width: 400px;
+    height: 50px;
+    line-height: 50px;
+    position: relative;
+    border: 0.5px solid #FFF;
+    border-radius: 10px;
+}
+
+.done{
+    border: 1px solid #3e33a0;
+    background-color: #3e33a0;
+    font-weight: bold;
+    text-decoration: line-through;
+}
+
+.textdone{
+    color: white;
+    font-family: Space Mono;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.0525rem;
+}
+
+.btninput{
+    font-size: 20px;
+    padding: 0.2em;
+}
+
+.tasks-name{
+    color: var(--gray-2, #4F4F4F);
+    font-family: Space Mono;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.0525rem;
+}
+
+/* estilo botões */
+
+.to-do-btn{
+    display: flex; 
+}
+
+.s{
+    margin-right: 0.1em;
+}
+
+.s:hover{
+    border: 1px solid black;
+    background-color: rgb(28, 182, 28);
+}
+
+.c:hover{
+    border: 1px solid black;
+    background-color: rgb(201, 41, 41);
+}
+
+/* estilo entrada das tarefas */
+
+#tasks{
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}
+
+#form{
+    display: flex;
+    flex-direction: row;
+}
+
+#input-tasks{
+    box-shadow: none;
+    padding: 0.5em;
+    width: 20em;
+    border: 1px solid black;
+    outline-style: none;
+}
+
+#btn{
+    box-shadow: none;
+    border: 1px solid black;
+    background-color: rgb(198, 209, 46);
+    cursor: pointer;
+    padding: 0.2em;
+    transition: 0.5s;
+    width: 40px;
+}
+
+#btn:hover{
+    background-color: #766bdb;
+}
+
+/* ícones */
+
+ion-icon{
+    transition: 0.5s;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+/* estilo tarefas */
+
+#tasks-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 7em;
+    list-style: none;
+}
+
+/* tarefas à fazer */
+
+#to-do{
+    display: flex;
+    flex-direction: column;
+}
+
+/* tarefas completas */
+
+#completed{
+    display: flex;
+    flex-direction: column;
+    height: 50px;
+    line-height: 50px;
+}
+
+/* excluir tasks */
+.hide{
+    display: none;
+}
+
+footer{
+    color: #BDBDBD;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    align-items: center;
+    margin-top: 50em;
+    margin-bottom: 1.5em;
+}
