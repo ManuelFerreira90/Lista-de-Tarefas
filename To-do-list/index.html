@@ -19,7 +19,7 @@
         <div id="tasks">
             <h2 class="tasks-title">Enter your tasks:</h2>
             <form action="" id="form">
-                <input type="text" id="input-tasks" class="tasks-name" placeholder="Your tasks">
+                <input type="text" id="input-tasks" maxlength="35" class="tasks-name" placeholder="Your tasks">
                 <button id="btn" type="submit">
                     <ion-icon name="add-outline"></ion-icon>
                 </button> 
@@ -41,7 +41,7 @@
             <div id="completed">
                 <h2 class="tasks-title">Completed</h2>
                 <ul id="to-do-list-complet" class="tasks-list yes">
-                    <li class="tasks-style done">
+                    <li class="tasks-style template1 hide done">
                         <span class="textdone">testando</span>
                         <ion-icon class="btninput c remove-btn1" name="close-outline"></ion-icon>
                     </li>
