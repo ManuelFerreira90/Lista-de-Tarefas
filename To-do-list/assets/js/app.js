@@ -27,7 +27,17 @@ const btn_mobile = document.querySelector('.btn-mobile');
 btn_mobile.addEventListener('click', function(event){
     event.preventDefault();
     const nav = document.querySelector('nav');
+    const footer = document.querySelector('footer');
+    const main = document.querySelector('main');
     nav.classList.toggle('active');
+    if (nav.classList.contains('active')) {
+        footer.style.marginTop = '0';
+        main.classList.add('hide');
+    }
+    else {
+        main.classList.remove('hide');
+        footer.style.marginTop = '32em';
+    }
 });
 
 

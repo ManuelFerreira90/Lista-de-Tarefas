@@ -120,7 +120,7 @@ main{
     width: 400px;
     height: 50px;
     line-height: 50px;
-    border: 0.5px solid #FFF;
+    border: 0.5px solid #0c0c0c;
     border-radius: 10px;
 }
 
@@ -241,6 +241,7 @@ ion-icon{
     flex-direction: column;
 }
 
+
 /* tarefas completas */
 
 #completed{
@@ -264,7 +265,7 @@ footer{
     font-weight: 500;
     line-height: normal;
     align-items: center;
-    margin-top: 50em;
+    margin-top: 32em;
     margin-bottom: 1.5em;
 }
 
@@ -275,7 +276,8 @@ footer{
     }
 
     #input-tasks{
-        width: 15em;
+        width: 20em;
+        height: 2em;
     }
 
     #tasks{
@@ -300,39 +302,73 @@ footer{
     }
 
     #title{
+        display: inline-block;
         font-size: 1.2em;
-    }
-
-    #image{
-        
     }
 
     #header-container{
         justify-content: space-between;
     }
 
+    #header1{
+        align-items: center;
+        width: 200px;
+        height: 70px;
+    }
+
+    #image{
+        display: inline-block;
+        height: 70%;
+    }
+
     .ul{
-        display: none;
+        display: block;
         position: absolute;
         width: 100%;
-        top: 100px;
-        height: calc(100vh);
+        top: 85px;
+        height: 0;
         right: 0;
         background-color: #689ee4;
-        z-index: 10000000;
+        transition: 0.5s;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+
+    .li{
+        visibility: hidden;
+    }
+
+    nav{
+        width: 0;
     }
 
     nav.active .ul{
-        display: block;
+        height: calc(100vh - 85px);
+        visibility: visible;
+        overflow-y: auto;
+    }
+
+    nav.active .li{
+        visibility: visible;
+        padding: 1.5em 0;
+        border-top: 2px solid rgba(8, 8, 8, 0.2);
+        border-bottom: 2px solid rgba(8, 8, 8, 0.2);
+    }
+
+    nav.active .li:not(:first-child) {
+        border-top: none;
     }
 
     .btn-mobile{
         display: block;
     }
 
-    footer{
-        display: block;
+    .tasks-title{
+        font-size: 1.2em;
     }
-    
+
+    .tasks-name{
+        font-size: 1em;
+    }
 
 }
