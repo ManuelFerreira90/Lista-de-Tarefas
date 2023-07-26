@@ -394,7 +394,7 @@ footer{
 @media screen and (min-width: 768px) and (max-width: 1025px){
 
     nav{
-        width: 400px;
+        width: 500px;
     }
 
 }
@@ -440,3 +440,13 @@ footer{
     }
 
 }
+
+@media screen and (min-width: 2000px){
+
+    .ul{
+        width: 2100px;
+    }
+
+}
+
+
