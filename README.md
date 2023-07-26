@@ -29,19 +29,22 @@ As tarefas adicionadas e suas respectivas conclusões serão salvas no LocalStor
 
 O projeto possui a seguinte estrutura de arquivos:
 
+```
 lista-de-tarefas/
-├── assets/
-│   ├── css/
-│   │   └── style.css
-│   ├── js/
-|   |   ├──modules/
-|   |   |    └── functions.js
-│   │   └── app.js
-│   └── img/
-│       ├── icons8-cardápio-48.png
-|       └── icons8-to-do-list-64.png    
-├── index.html
-└── README.md
+  ├── assets/
+  │   ├── css/
+  │   │   └── style.css
+  │   ├── js/
+  │   │   ├── modules/
+  │   │   │   └── functions.js
+  │   │   └── app.js
+  │   └── img/
+  │       ├── icons8-cardápio-48.png
+  │       └── icons8-to-do-list-64.png
+  ├── index.html
+  └── README.md
+```
+
 
 ## Próximos passos
 
