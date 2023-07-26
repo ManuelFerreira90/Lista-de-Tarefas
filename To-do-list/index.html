@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <title>To do List</title>
 </head>
 <body>
@@ -11,11 +11,17 @@
     <header>
         <div id="header-container">
             <div id="header1">
-                <img id="image" src="./img/Checklist.svg" alt="checklist" width="70px">
-                <h1 id="title">To do list</h1>
+                <img id="image" src="./assets/img/icons8-to-do-list-64.png" alt="checklist" width="50px">
+                <h1 id="title"><a class="title ti" href="index.html">To do list</a></h1>
             </div>
+            <nav>
+                <ul class="ul">
+                    <li class="li"><a class="ancora" href="./assets/html/todo.html">To do</a></li>
+                    <li class="li"><a class="ancora" href="index.html">Home</a></li>
+                </ul>
+            </nav>
+            <button class="btn-mobile"><img src="./assets/img/icons8-cardápio-48.png" alt="menu-squared"></button>
         </div>
-        <nav><a id="ancora" href="teste.html">To do</a></nav>
     </header>
 
     <main>
@@ -28,14 +34,17 @@
                 </button> 
             </form>
         </div>
-
     </main>
 
     <footer>
+        
+        
+        <a target="_blank" href="https://icons8.com/icon/gjbbiMeQzowz/menu-squared">Menu Squared</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+        <a target="_blank" href="https://icons8.com/icon/M3Lj7QGpumv1/to-do-list">To Do List</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
         created by <span class="text name">ManuelFerreira90</span>
     </footer>
 
-    <script type="module" src="./js/teste.js"></script>
+    <script type="module" src="./assets/js/app.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 </body>
 </html>

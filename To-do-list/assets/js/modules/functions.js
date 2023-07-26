@@ -32,6 +32,7 @@ function load() {
 }
 
 function addnewtask(task, list0 , list1) {
+
     /* clonando template de tarefas */
     const template = document.querySelector(".template");
     const newtask = template.cloneNode(true);
@@ -50,7 +51,7 @@ function addnewtask(task, list0 , list1) {
         const aux = this.parentNode.parentNode;
         const spanElement = aux.querySelector('span');
         const textoDoSpan = spanElement.textContent;
-        dlt(aux, textoDoSpan, convertion);
+        dlt(aux, textoDoSpan, convertion, '0');
     });
 
     /* tarefa concluída */
@@ -58,10 +59,26 @@ function addnewtask(task, list0 , list1) {
     completed.addEventListener('click', function () {
         const aux1 = this.parentNode.parentNode;
         const spanElement1 = aux1.querySelector('span');
-        const textoDoSpan1 = spanElement1.textContent;
-        convertion = true
-        dlt(aux1, textoDoSpan1, convertion);
-        addoldtask(textoDoSpan1, list1, convertion);
+        const task_text = spanElement1.textContent;
+        convertion = true;
+        dlt(aux1, task_text, convertion);
+        addoldtask(task_text, list1, convertion);
+
+        let acont = parseInt(localStorage.getItem('acont'));
+
+        for (let i = 0; i < localStorage.length; i++) {
+            const chave = localStorage.key(i);
+            const valor = localStorage.getItem(chave);
+
+            if (valor == task_text) {
+                const tam = chave.length;
+                const auxtam = tam - 9;
+                const textaux = chave.slice(tam - auxtam);
+                localStorage.setItem('ctask_text' + textaux, task_text);
+                localStorage.removeItem(chave);
+                break;
+            }
+        }
     });
 }
 
@@ -86,18 +103,23 @@ function addoldtask(task, list, convertion) {
         const spanElement = aux.querySelector('span');
         const textoDoSpan = spanElement.textContent;
         convertion = false;
-        dlt(aux, textoDoSpan, convertion);
+        dlt(aux, textoDoSpan, convertion, '1');
     });
 }
 
 /* deletar tarefas não concluídas */
-function dlt(li_task, text, convertion) {
+function dlt(li_task, text, convertion, confirm) {
     li_task.remove();
     for (let i = 0; i < localStorage.length; i++) {
         const chave = localStorage.key(i);
         const valor = localStorage.getItem(chave);
-        if(valor == text){
+        if(valor == text && confirm == '0' && chave[0] == 't'){
             localStorage.removeItem(chave);
+            break;
+        }
+        else if(valor == text && confirm == '1' && chave[0] == 'c'){
+            localStorage.removeItem(chave);
+            break;
         }
     } 
     if(!convertion){

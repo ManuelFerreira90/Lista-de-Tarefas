@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <header>
+        <div id="header-container">
+            <div id="header1">
+                <img id="image" src="../img/icons8-microsoft-to-do-app-64.png" alt="checklist" width="70px">
+                <h1 id="title"><a class="title ti" href="../../index.html">To do list</a></h1>
+            </div>
+            <nav>
+                <ul class="ul">
+                    <li class="li"><a class="ancora" href="todo.html">To do</a></li>
+                    <li class="li"><a class="ancora" href="../../index.html">Home</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-container">
+                <ul class="ul-mobile">
+                    <li class="li-mobile"><a class="ancora-mobile" href="todo.html">To do</a></li>
+                    <li class="li-mobile"><a class="ancora-mobile" href="../../index.html">Home</a></li>
+                </ul>
+                <button><img src="./assets/img/" alt="menu-squared"></button>
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <div id="tasks-container">
+            <div id="to-do">
+                <h2 class="tasks-title">To do</h2>
+                <ul id="to-do-list" class="tasks-list not">
+                    <li class="tasks-style template hide">
+                        <span class="tasks-name">testando</span>
+                        <div class="to-do-btn">
+                                <ion-icon class="btninput s" name="checkmark-outline"></ion-icon>
+                                <ion-icon class="btninput c remove-btn" name="close-outline"></ion-icon>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div id="completed">
+                <h2 class="tasks-title">Completed</h2>
+                <ul id="to-do-list-complet" class="tasks-list yes">
+                    <li class="tasks-style template1 hide done">
+                        <span class="textdone">testando</span>
+                        <ion-icon class="btninput c remove-btn1" name="close-outline"></ion-icon>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        created by <span class="text name">ManuelFerreira90</span>
+        <a target="_blank" href="https://icons8.com/icon/gjbbiMeQzowz/menu-squared">Menu Squared</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+        <a target="_blank" href="https://icons8.com/icon/jxofWi4TQUA0/microsoft-to-do-app">Microsoft To Do App</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+    </footer>
+
+    <script type="module" src="../js/modules/functions.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+</body>
+</html>

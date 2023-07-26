@@ -19,11 +19,16 @@ function add() {
         acont = acont + 1;
         localStorage.setItem('acont', acont);
         document.querySelector('#input-tasks').value = "";
-
     }
 
 }
 
+const btn_mobile = document.querySelector('.btn-mobile');
+btn_mobile.addEventListener('click', function(event){
+    event.preventDefault();
+    const nav = document.querySelector('nav');
+    nav.classList.toggle('active');
+});
 
 
 
