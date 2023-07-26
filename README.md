@@ -17,10 +17,12 @@ Este é um projeto de lista de tarefas simples criado com HTML, CSS e JavaScript
 4. Para marcar uma tarefa como concluída, clique no ícone de marcação de check ao lado dela.
 5. Para remover uma tarefa, clique no ícone de X ao lado dela.
 
-Acesse também pelo link:
+As tarefas adicionadas e suas respectivas conclusões serão salvas no LocalStorage, para que você possa acessá-las novamente quando retornar ao aplicativo.
+
+## Link
 [Acessar a página](https://manuelferreira90.github.io/Lista-de-Tarefas/)
 
-As tarefas adicionadas e suas respectivas conclusões serão salvas no LocalStorage, para que você possa acessá-las novamente quando retornar ao aplicativo.
+pelo link a página comporta se diferente do normal, recomendo que clone o repositório
 
 ## Tecnologias utilizadas
 
