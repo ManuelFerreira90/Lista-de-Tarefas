@@ -226,7 +226,7 @@ ion-icon{
 /* estilo tarefas */
 
 #tasks-container{
-    height: 300px;
+    height: auto;
     margin-top: 5em;
     display: flex;
     flex-direction: row;
@@ -239,6 +239,7 @@ ion-icon{
 #to-do{
     display: flex;
     flex-direction: column;
+    width: auto;
 }
 
 
@@ -247,14 +248,15 @@ ion-icon{
 #completed{
     display: flex;
     flex-direction: column;
-    height: 50px;
-    line-height: 50px;
+    width: auto;
 }
 
 /* esconder tasks */
 .hide{
     display: none;
 }
+
+/* rodapé */
 
 footer{
     color: #BDBDBD;
@@ -273,11 +275,10 @@ footer{
 }
 
 #to-do-footer{
-    margin-top: 32em;
+    margin-top: 51em;
 }
 
-
-
+/* responsividade */
 @media screen and (max-width: 500px) {
 
     .tasks-name{
@@ -304,8 +305,16 @@ footer{
         margin-left: 20px;
     }
 
+    #to-do{
+        margin-right: 1em;
+    }
+
+    #completed{
+        margin-right: 1em;
+    }
+
     .tasks-style{
-        width: 350px;
+        width: auto;
         height: 50px;
         line-height: 50px;
     }
@@ -379,9 +388,6 @@ footer{
         font-size: 1em;
     }
 
-    footer{
-        margin-top: 32em;
-    }
 
 }
 
@@ -391,6 +397,17 @@ footer{
         width: 400px;
     }
 
+}
+
+@media screen and (min-width: 501px) and (max-width: 768px){
+
+    #tasks-container{
+        margin-top: 10px;
+        flex-direction: column;
+        gap: 10px;
+        margin-left: 20px;
+        align-items: center;
+    }
 
 }
 
@@ -399,6 +416,18 @@ footer{
     #input-tasks{
         width: 15em;
         height: 2em;
+    }
+
+    #to-do{
+        margin-right: 1em;
+    }
+
+    .tasks-style{
+        width: auto;
+    }
+    
+    #completed{
+        margin-right: 1em;
     }
 
 }
