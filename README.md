@@ -20,7 +20,6 @@ Este é um projeto de lista de tarefas simples criado com HTML, CSS e JavaScript
 As tarefas adicionadas e suas respectivas conclusões serão salvas no LocalStorage, para que você possa acessá-las novamente quando retornar ao aplicativo.
 
 ## Link
-[Acessar a página](https://manuelferreira90.github.io/Lista-de-Tarefas/)
 
 pelo link a página comporta se diferente do normal, recomendo que clone o repositório
 
