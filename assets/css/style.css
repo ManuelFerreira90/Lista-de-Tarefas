@@ -15,6 +15,7 @@ header{
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-around;
     gap: 10px;
     padding: 0.5em 2em;
     box-shadow: none;
@@ -48,11 +49,6 @@ header{
     font-weight: 400;
     line-height: normal;
     letter-spacing: -0.0525rem;
-}
-
-nav{
-    width: 1000px;
-    text-align: center;
 }
 
 .ul{
@@ -391,14 +387,6 @@ footer{
 
 }
 
-@media screen and (min-width: 768px) and (max-width: 1025px){
-
-    nav{
-        width: 500px;
-    }
-
-}
-
 @media screen and (min-width: 501px) and (max-width: 768px){
 
     #tasks-container{
@@ -441,12 +429,5 @@ footer{
 
 }
 
-@media screen and (min-width: 2000px){
-
-    .ul{
-        width: 2100px;
-    }
-
-}
 
 
